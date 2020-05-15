@@ -53,8 +53,8 @@ public class Test : MonoBehaviour
         AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
         
-        AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
-        currentActivity.Call("startActivity", intentClass);
+        AndroidJavaClass intentClass = new AndroidJavaClass("android.content.res.Configuration");
+        currentActivity.Call("onConfigurationChanged", null);
     }
     
     public void OnTriggerCSharpCrash()
