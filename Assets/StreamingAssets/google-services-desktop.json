@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608006090548",
+    "firebase_url": "https://testcrash-720a3.firebaseio.com",
+    "project_id": "testcrash-720a3",
+    "storage_bucket": "testcrash-720a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608006090548:android:e6d5777f3715595ec4bf61",
+        "android_client_info": {
+          "package_name": "com.test.crasher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608006090548-6c8i0j71460499qp5rd49sro60tks6q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWHblBfMmgG1E-Z13lvQ7MHLuNWUpP2vE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608006090548-6c8i0j71460499qp5rd49sro60tks6q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
