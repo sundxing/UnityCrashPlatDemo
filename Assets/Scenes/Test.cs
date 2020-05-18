@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -37,6 +38,13 @@ public class Test : MonoBehaviour
         
     }
 
+    public void OnTriggerNativeSoCrash()
+    {
+        Debug.LogWarning("UnityCrashTest : OnTriggerNativeSoCrash");
+
+        Crash();
+    }
+
     public void OnTriggerNativeCrash()
     {
         Debug.LogWarning("UnityCrashTest : OnTriggerNativeCrash");
@@ -63,4 +71,9 @@ public class Test : MonoBehaviour
         
         throw new Exception("Test crash");
     }
+
+
+    [DllImport("testCrash")]
+    private static extern void Crash();
+
 }
